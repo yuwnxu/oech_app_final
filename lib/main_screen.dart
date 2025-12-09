@@ -16,7 +16,8 @@ class _MainScreenState extends State<MainScreen> {
   void changePage(int index) {
     setState(() {
       pageIndex = index;
-      pageController.jumpToPage(pageIndex);
+      pageController.animateTo(pageController.position.maxScrollExtent, duration: Duration(seconds: 1),
+          curve: Curves.easeInOut);
     });
   }
 

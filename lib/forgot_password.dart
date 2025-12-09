@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import ' sign_in_page.dart';
 import 'verification.dart';
-class ForgotPassword extends StatefulWidget {
+class ForgotPassword extends StatefulWidget { //восстановление пароля
   const ForgotPassword({super.key});
 
   @override

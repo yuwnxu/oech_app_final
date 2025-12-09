@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
+import 'package:oech_app_final/track.dart';
 import 'home.dart';
 class TransactionSuccessPage extends StatefulWidget {
   const TransactionSuccessPage({super.key});
@@ -108,7 +109,9 @@ class _TransactionSuccessPageState extends State<TransactionSuccessPage> {
                           borderRadius: BorderRadius.circular(6),
                         ),
                       ),
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.push(context, MaterialPageRoute(builder: (context) => TrackPage()));
+                      },
                       child: Text(
                         'Track my item',
                         style: TextStyle(

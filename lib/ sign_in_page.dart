@@ -3,7 +3,7 @@ import 'home.dart';
 import 'sign_up_page.dart';
 import 'forgot_password.dart';
 
-class SignInPage extends StatefulWidget {
+class SignInPage extends StatefulWidget { //вход в аккаунт
   const SignInPage({super.key});
 
   @override

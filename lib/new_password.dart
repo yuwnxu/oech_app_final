@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'home.dart';
 
-class NewPassword extends StatefulWidget {
+class NewPassword extends StatefulWidget { //новый пароль
   const NewPassword({super.key});
 
   @override

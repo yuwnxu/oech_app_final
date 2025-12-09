@@ -2,9 +2,10 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'main_screen.dart';
 
+//Гебекова Юлдуз Уллубиевна, 09.12.2025
 
 void main() {
-  runApp(MyApp());
+  runApp(MyApp()); //запуск приложения
 }
 
 class MyApp extends StatelessWidget {
@@ -14,12 +15,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: const SplashScreen(),
+      home: SplashScreen(),
     );
   }
 }
 
-class SplashScreen extends StatefulWidget {
+class SplashScreen extends StatefulWidget { //сплэш скрин
   const SplashScreen({super.key});
 
   @override

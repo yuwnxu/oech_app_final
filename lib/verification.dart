@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:pinput/pinput.dart';
 import 'new_password.dart';
 
-class Verification extends StatefulWidget {
+class Verification extends StatefulWidget { //верификация
   const Verification({super.key});
 
   @override

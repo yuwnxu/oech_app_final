@@ -53,112 +53,111 @@ class _TransactionSuccess2PageState extends State<TransactionSuccess2Page> {
     return Scaffold(
       backgroundColor: Colors.white,
       body: SafeArea(
+          child: SingleChildScrollView(
         child: Column(
           children: [
-             SizedBox(height: 200),
-            Expanded(
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.start,
-                children: [
-                  Image.asset(
-                    checkFrames[frameIndex],
-                    width: 150,
-                    height: 150,
+            SizedBox(height: 150),
+            Column(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: [
+                Image.asset(
+                  checkFrames[frameIndex],
+                  width: 150,
+                  height: 150,
+                ),
+                 SizedBox(height: 40),
+
+                 Text(
+                  'Delivery Successful',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.w600,
+                    color: Colors.black,
                   ),
-                   SizedBox(height: 40),
+                ),
+                 SizedBox(height: 8),
 
-                   Text(
-                    'Delivery Successful',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                      fontSize: 20,
-                      fontWeight: FontWeight.w600,
-                      color: Colors.black,
-                    ),
+                Text(
+                  'Your item has been delivered successfully',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    fontSize: 14,
+                    color: Colors.black54,
                   ),
-                   SizedBox(height: 8),
+                ),
 
-                  Text(
-                    'Your item has been delivered successfully',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                      fontSize: 14,
-                      color: Colors.black54,
-                    ),
+                SizedBox(height: 40),
+
+                Text(
+                  'Rate Rider',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    fontSize: 14,
+                    color: Color(0xFF0560FA),
+                    fontWeight: FontWeight.w500,
                   ),
+                ),
+                SizedBox(height: 16),
 
-                  SizedBox(height: 40),
-
-                  Text(
-                    'Rate Rider',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                      fontSize: 14,
-                      color: Color(0xFF0560FA),
-                      fontWeight: FontWeight.w500,
-                    ),
-                  ),
-                  SizedBox(height: 16),
-
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: List.generate(
-                      5,
-                          (index) => Padding(
-                        padding: EdgeInsets.symmetric(horizontal: 4),
-                        child: Icon(
-                          Icons.star_border,
-                          color: Colors.grey,
-                          size: 28,
-                        ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: List.generate(
+                    5,
+                        (index) => Padding(
+                      padding: EdgeInsets.symmetric(horizontal: 4),
+                      child: Icon(
+                        Icons.star_border,
+                        color: Colors.grey,
+                        size: 28,
                       ),
                     ),
                   ),
+                ),
 
-                  SizedBox(height: 32),
-                  Padding(
-                    padding: EdgeInsets.symmetric(horizontal: 16),
-                    child: Material(
-                      elevation: 2,
-                      borderRadius: BorderRadius.circular(6),
-                      child: Container(
-                        padding: EdgeInsets.symmetric(
-                            horizontal: 12, vertical: 8),
-                        decoration: BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.circular(6),
-                        ),
-                        child: Row(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Icon(
-                              Icons.chat_bubble_outline,
-                              color: Color(0xFF0560FA),
-                              size: 20,
-                            ),
-                            SizedBox(width: 8),
-                            Expanded(
-                              child: TextField(
-                                maxLines: 3,
-                                decoration: InputDecoration(
-                                  border: InputBorder.none,
-                                  hintText: 'Add feedback',
-                                  hintStyle: TextStyle(
-                                    fontSize: 14,
-                                    color: Colors.black54,
-                                  ),
+                SizedBox(height: 32),
+                Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 16),
+                  child: Material(
+                    elevation: 2,
+                    borderRadius: BorderRadius.circular(6),
+                    child: Container(
+                      padding: EdgeInsets.symmetric(
+                          horizontal: 12, vertical: 8),
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(6),
+                      ),
+                      child: Row(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Icon(
+                            Icons.chat_bubble_outline,
+                            color: Color(0xFF0560FA),
+                            size: 20,
+                          ),
+                          SizedBox(width: 8),
+                          Expanded(
+                            child: TextField(
+                              maxLines: 3,
+                              decoration: InputDecoration(
+                                border: InputBorder.none,
+                                hintText: 'Add feedback',
+                                hintStyle: TextStyle(
+                                  fontSize: 14,
+                                  color: Colors.black54,
                                 ),
                               ),
                             ),
-                          ],
-                        ),
+                          ),
+                        ],
                       ),
                     ),
                   ),
-                ],
-              ),
+                ),
+              ],
             ),
-
+            SizedBox(height: 30),
             Padding(
               padding:
               EdgeInsets.only(left: 16, right: 16, bottom: 24),
@@ -195,6 +194,7 @@ class _TransactionSuccess2PageState extends State<TransactionSuccess2Page> {
           ],
         ),
       ),
+    ),
     );
   }
 }

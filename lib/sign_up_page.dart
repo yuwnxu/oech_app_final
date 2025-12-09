@@ -3,7 +3,7 @@ import ' sign_in_page.dart';
 import 'home.dart';
 
 
-class SignUpPage extends StatefulWidget {
+class SignUpPage extends StatefulWidget { //регистрация
   const SignUpPage({super.key});
 
   @override
